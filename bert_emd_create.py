@@ -30,5 +30,5 @@ for i in range(len(tokenizer)):
     finish=time.time()
     print('############  {}/{}  ##########'.format(i,len(tokenizer)))
     print('############ remaining time:{} ###########'.format((finish-begin)/60/(i+1)*(len(tokenizer)-i)))
-torch.save(with_special_embeddings, 'with_special_embeddings.pt')
+torch.save(with_special_embeddings, 'with_embed.pt')
 torch.save(without_special_embeddings, 'without_special_embeddings.pt')
